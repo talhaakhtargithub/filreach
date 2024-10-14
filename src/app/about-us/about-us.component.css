@@ -1,0 +1,148 @@
+.card {
+  border: none;
+  border-radius: 30px; /* Rounded corners for cards */
+}
+
+footer {
+  background-color: #e8ff76; /* Updated footer background color */
+  padding: 20px 0;
+  color: #000; /* Text color for footer */
+}
+
+.btn-primary {
+  background-color: #254eed; /* Button primary color */
+  border-color: #254eed; /* Button border color */
+}
+
+h6 {
+  font-weight: bold; /* Bold text for headings */
+}
+
+ul {
+  padding-left: 0; /* Remove padding from list */
+  list-style: none; /* No bullet points */
+}
+
+ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+footer form input {
+  border-radius: 50px; /* Rounded corners for input fields */
+}
+
+footer form .btn-primary {
+  background-color: #263959; /* Button primary color in footer */
+  border-color: #263959; /* Button border color in footer */
+  border-radius: 50px; /* Rounded corners for footer buttons */
+}
+
+footer small {
+  color: #6c757d; /* Color for small text in footer */
+}
+
+/* CSS for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Slide in from below */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+.animated-fadeIn {
+  animation: fadeIn 2s ease-in-out forwards; /* Fade in animation */
+  opacity: 0; /* Start with hidden elements */
+}
+
+/* Start a project button custom styling */
+.start-project-btn {
+  background-color: #D7FF7B; /* Button background color */
+  color: black !important; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 20px; /* Rounded corners for button */
+  padding: 10px 20px; /* Padding for button */
+  font-size: 16px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  height: 40px; /* Fixed height for button */
+  text-align: center; /* Center text in button */
+  line-height: 40px; /* Center text vertically in button */
+  text-decoration: none; /* No underline on button text */
+}
+
+.start-project-btn:hover {
+  background-color: #000000 !important; /* Darker color on hover */
+  color: #D7FF7B !important; /* Text color on hover */
+}
+
+.footer {
+  border-top-left-radius: 20px !important; /* Rounded top left corner */
+  border-top-right-radius: 20px !important; /* Rounded top right corner */
+}
+
+.svg-icon {
+  height: 40px; /* Match the height of the button */
+  margin-left: 0; /* No margin between button and icon */
+  vertical-align: middle; /* Align the icon vertically with text */
+  transform: rotate(215deg); /* Tilt the SVG image */
+  transition: transform 0.3s; /* Smooth transition for hover effect (optional) */
+}
+
+/* Additional styles for hover effects */
+.start-project-btn:hover .svg-icon {
+  transform: rotate(0); /* Reset rotation on button hover */
+}
+
+.card img {
+  transition: transform 0.3s; /* Smooth image scale effect */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Slightly scale up image on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  h5 {
+      font-size: 1.5rem;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h5 {
+      font-size: 1.2rem;
+  }
+
+  .start-project-btn {
+      width: 100%; /* Full width for small devices */
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  .svg-icon {
+      height: 30px; /* Smaller SVG icon */
+  }
+}

@@ -1,0 +1,107 @@
+.container-fluid {
+  background: #E1E1E1;
+  border-top-left-radius: 20px !important; /* Rounded top left corner */
+  border-top-right-radius: 20px !important; /* Rounded top right corner */
+}
+
+.svg-icon {
+  width: 60px;  /* Set a fixed width */
+  margin-top: 10px;
+  height: 60px; /* Set a fixed height */
+  object-fit: contain;  /* Ensure the SVG is scaled properly */
+}
+.custom-margin {
+  margin-left: 15px;  /* Adjust as needed */
+  margin-right: 15px; /* Adjust as needed */
+}
+.container1{
+  background: #E1E1E1;
+}
+
+.d-flex.align-items-start {
+  align-items: flex-start !important;  /* Align SVG to the top */
+}
+
+.bg-custom {
+  background-color: #D7FF7B !important; /* Custom background color */
+}
+.card-body {
+  text-align: left; /* Align text to the left */
+}
+
+.card {
+  border-radius: 30px !important; /* 50% rounded corners */
+}
+.col-md-10{
+  left:0
+}
+.hero-section {
+  background-color: #445c91;
+  color: white;
+  padding: 3rem;
+  border-radius: 25px;
+}
+
+.green-section {
+  background-color: #d9f57c;
+  padding: 2rem;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lower-section {
+  margin-top: 4rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale animation for hovering cards */
+@keyframes cardHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Apply fade-in effect to the whole section */
+.animate-section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-hover:hover {
+  animation: cardHover 0.3s forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* SVG animation to make it pop on hover */
+.svg-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

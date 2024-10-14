@@ -1,0 +1,95 @@
+/* CSS */
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  background: #E1E1E1;
+  border-radius: 10px;
+}
+
+.card {
+  border: none;
+  border-radius: 27px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+  .row-cols-1 .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .row-cols-md-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .row-cols-lg-3 .col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-cols-lg-3 .col {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+/* Card Text Styles */
+.card-title {
+  color: #2d2d2d;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* Button Styles */
+.start-project-btn {
+  background-color: #D7FF7B;
+  color: black !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.start-project-btn:hover {
+  background-color: #000000 !important;
+  color: #D7FF7B !important;
+}
+
+.start-project-btn1 {
+  background-color: #D7FF7B;
+  color: black !important;
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.start-project-btn1:hover {
+  background-color: #000000 !important;
+  color: #D7FF7B !important;
+}
+
+/* Image Styles */
+.card-img {
+  object-fit: cover;
+  height: 100%;
+}
+

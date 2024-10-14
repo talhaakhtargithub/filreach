@@ -1,0 +1,220 @@
+.hero-section {
+  position: relative;
+  height: 70vh; /* Default height for larger screens */
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-top: 100px !important;
+}
+
+/* Custom placeholder style */
+input::placeholder {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+  opacity: 1; /* Ensures the color is visible */
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  width: 50px; /* Default icon size */
+  height: 50px;
+  transition: transform 0.3s;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon1 {
+  left: 0%;
+  top: 30px;
+  animation-delay: 0s;
+}
+
+.icon2 {
+  left: 10%;
+  top: 120px;
+  animation-delay: 0.5s;
+}
+
+.icon3 {
+  left: 0%;
+  top: 300px;
+  animation-delay: 1s;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-section::before,
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero-section::before {
+  left: 0;
+  width: 25%;
+  max-height: 600px;
+  background-image: url('/assets/Vector2.svg');
+}
+
+.hero-section::after {
+  right: 0;
+  width: 25%;
+  height: 100%;
+  max-height: 600px;
+  background-image: url('/assets/Vector.svg');
+  background-size: 200%;
+  background-position: left center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Fade-in effect for headline and paragraph */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.svg-icon {
+  position: relative;
+  height: 40px;
+  margin-left: 0;
+  vertical-align: middle;
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto; /* Allow the height to adjust to the content on mobile */
+    padding: 20px 10px; /* Add padding for mobile */
+  }
+
+  .icon1,
+  .icon2,
+  .icon3 {
+    width: 30px; /* Smaller icon size on mobile */
+    height: 30px;
+  }
+
+  .icon1 {
+    top: 10px; /* Adjust positioning for smaller screens */
+  }
+
+  .icon2 {
+    top: 100px;
+    left: 8%;
+  }
+
+  .icon3 {
+    top: 180px;
+  }
+
+  h1 {
+    font-size: 1.75rem; /* Smaller heading size for mobile */
+  }
+
+  .svg-icon {
+    height: 30px; /* Smaller SVG icon on mobile */
+  }
+
+  .mt-3 {
+    margin-top: 10px; /* Reduce spacing on mobile */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .icon1,
+  .icon2,
+  .icon3 {
+    width: 45px; /* Adjusted size for tablet screens */
+    height: 45px;
+  }
+}
+
+.search-bar {
+  border-radius: 20%; /* 20% rounded corners */
+}
+
+.svg-icon:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+}
+.search-bar {
+  width: 100%;
+  max-width: 641px; /* Limits the width to 941px on larger screens */
+  height: 137px;
+}
+
+.search-bar .input-group {
+  height: 100%;
+}
+
+.search-bar img {
+  width: 40px;
+  height: 40px;
+}
+
+.search-bar input {
+  font-family: 'Supernormale W00 Regular';
+  color: aliceblue;
+  font-size: 1.9rem;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    height: auto; /* Allows height to adjust */
+  }
+
+  .search-bar .input-group-text, .search-bar input {
+    padding: 0.5rem;
+    height: auto; /* Adjust input height on smaller screens */
+  }
+
+  .search-bar img {
+    width: 30px;
+    height: 30px; /* Shrinks the icons on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .search-bar {
+    padding: 0.5rem; /* Adds padding around the search bar */
+  }
+
+  .search-bar input {
+    font-size: 1rem; /* Decreases font size on smaller screens */
+  }
+}

@@ -1,0 +1,98 @@
+/* Custom Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem; /* Padding for the navbar */
+  border-bottom-left-radius: 20px !important; /* Rounded corners */
+  border-bottom-right-radius: 20px !important; /* Rounded corners */
+  background-color: black !important; /* Navbar background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Navbar brand logo */
+.navbar-brand img {
+  height: 50px; /* Default height for logo */
+  object-fit: contain; /* Ensure logo fits properly */
+  transition: height 0.3s ease; /* Smooth height transition */
+}
+
+/* Logo size adjustment for small screens */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px; /* Slightly smaller logo for smaller screens */
+  }
+}
+
+/* Remove focus outline */
+.no-outline:focus {
+  outline: none; /* No outline on focus */
+  box-shadow: none; /* No shadow on focus */
+}
+
+/* Navbar links hover effect */
+.nav-link:hover {
+  color: #D7FF7B !important; /* Lime hover color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Adjust spacing for nav links */
+.nav-item {
+  margin: 0; /* No margin for nav items to eliminate space */
+}
+
+/* Start a project button custom styling */
+.start-project-btn {
+  background-color: #D7FF7B; /* Button background color */
+  color: black !important; /* Button text color */
+  padding: 0.5rem 1.5rem; /* Button padding */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  height: 40px; /* Height for equal alignment */
+  display: flex; /* Flex display to align icon properly */
+  align-items: center; /* Center content vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Box shadow for the button */
+}
+
+/* Hover effect for the Start Project button */
+.start-project-btn:hover {
+  background-color: #000000 !important; /* Darker color on hover */
+  color: #D7FF7B !important; /* Text color on hover */
+}
+
+/* For small screen responsiveness */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center; /* Center align items on smaller screens */
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Adjust margins between items on smaller screens */
+  }
+
+  .start-project-btn {
+    margin-top: 0.5rem; /* Adjust button spacing */
+  }
+}
+
+/* Small screens: reduce padding */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.25rem 0.75rem; /* Smaller padding for smaller screens */
+  }
+}
+
+/* SVG Icon Style */
+.svg-icon {
+  height: 40px; /* Match the height of the button */
+  margin-left: 0; /* No margin between button and icon */
+  vertical-align: middle; /* Align the icon vertically with text */
+  transform: rotate(215deg); /* Tilt the SVG image */
+  transition: transform 0.3s; /* Smooth transition for hover effect (optional) */
+}
+
+.custom-navbar {
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Change this color if needed */
+}
+
