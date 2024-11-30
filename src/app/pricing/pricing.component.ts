@@ -12,10 +12,10 @@ export class PricingComponent {
       description: "Paying for LinkedIn Navigator without making an impact on your sales?",
       features: [
         "Personalized outreach: No two prospects receive the same message.",
-        "Target 300–400 high-quality prospects monthly.",
+        "Target 500 high-quality prospects monthly.",
         "Prospects sourced from leading data providers.",
       ],
-      price: "$298/month",
+      price: "$249/month",
       note: "*No setup fees or hidden charges."
     },
     {
@@ -23,10 +23,10 @@ export class PricingComponent {
       description: "Overlooking the best platform for business conversations outside of LinkedIn?",
       features: [
         "Tailored outreach for each prospect.",
-        "Engage with 300–400 prospects monthly.",
+        "Engage with 500 prospects monthly.",
         "Prospects sourced from leading data providers.",
       ],
-      price: "$298/month",
+      price: "$249/month",
       note: "*No setup fees or hidden charges."
     },
     {
@@ -34,10 +34,10 @@ export class PricingComponent {
       description: "Want to execute email outreach the right way?",
       features: [
         "Custom messaging for each lead.",
-        "Reach 400 prospects monthly after a 2-week warm-up period.",
+        "Reach 500 prospects monthly after a 2-week warm-up period.",
         "Full email setup: DKIM, DMARC, SPF configuration.",
       ],
-      price: "$449/month",
+      price: "$249/month",
       note: "*No hidden charges."
     },
     {
@@ -49,7 +49,7 @@ export class PricingComponent {
         "Seamlessly integrate with your CRM.",
       ],
       price: "$398/month",
-      note: "*No hidden charges."
+      note: "*Ongoing performance reviews to optimize results."
     },
     {
       title: "Research Assistant Package",
@@ -60,7 +60,7 @@ export class PricingComponent {
         "Personalized strategy report delivered to help build rapport and connections.",
       ],
       price: "Coming Soon",
-      note: "*No hidden charges."
+      note: "*Actionable insights to your inbox."
     },
   ];
 }

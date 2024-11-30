@@ -84,8 +84,11 @@
   height: 40px; /* Match the height of the button */
   margin-left: 0; /* No margin between button and icon */
   vertical-align: middle; /* Align the icon vertically with text */
-  transform: rotate(215deg); /* Tilt the SVG image */
+
   transition: transform 0.3s; /* Smooth transition for hover effect (optional) */
+}
+.svg-icon:hover{
+  transform: rotate(180deg);
 }
 
 .custom-navbar {
@@ -96,3 +99,31 @@
   background-color: rgba(0, 0, 0, 0.8); /* Change this color if needed */
 }
 
+@media (max-width: 350px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduce padding */
+  }
+
+  .navbar-brand img {
+    width: 40px; /* Make the logo smaller */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    flex-direction: row; /* Keep links in a single row */
+    justify-content: center; /* Center the links */
+    width: 100%; /* Use full width */
+  }
+
+  .nav-item {
+    margin: 0 0.5rem; /* Add horizontal spacing between items */
+  }
+
+  .start-project-btn {
+    margin-left: auto; /* Push the button to the right */
+  }
+
+  .svg-icon {
+    width: 20px; /* Adjust the SVG icon size */
+  }
+}

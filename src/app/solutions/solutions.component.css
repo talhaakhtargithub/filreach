@@ -1,5 +1,5 @@
 .container-fluid {
-  background: #E1E1E1;
+  background-color: #f5f5f5;
   border-top-left-radius: 20px !important; /* Rounded top left corner */
   border-top-right-radius: 20px !important; /* Rounded top right corner */
 }

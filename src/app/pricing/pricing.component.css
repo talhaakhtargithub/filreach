@@ -1,9 +1,9 @@
-/* CSS */
+/* General Styles */
 .container-fluid {
   width: 100%;
   margin: 0;
   padding: 2rem;
-  background: #E1E1E1;
+  background-color: #f5f5f5;
   border-radius: 10px;
 }
 
@@ -53,6 +53,10 @@
 /* Card Text Styles */
 .card-title {
   color: #2d2d2d;
+  min-height: 50px; /* Ensures consistent height for titles */
+  display: flex;
+  align-items: center; /* Vertically center the title */
+  justify-content: center; /* Center the title horizontally */
 }
 
 .text-muted {
@@ -73,8 +77,8 @@
 }
 
 .start-project-btn1 {
-  background-color: #D7FF7B;
-  color: black !important;
+  background-color: #1C275f;
+  color: #D7FF7B !important;
   border-radius: 20px;
   padding: 10px 20px;
   height: 40px;
@@ -83,8 +87,8 @@
 }
 
 .start-project-btn1:hover {
-  background-color: #000000 !important;
-  color: #D7FF7B !important;
+  background-color: #D7FF7B !important;
+  color: #1C275f !important;
 }
 
 /* Image Styles */
@@ -93,3 +97,12 @@
   height: 100%;
 }
 
+.card-body {
+  flex-grow: 1; /* Allow card body to expand */
+}
+
+.bullet-item {
+  display: flex; /* Align bullet items properly */
+  align-items: center; /* Center the bullet image and text */
+  margin-bottom: 10px; /* Adjust as needed */
+}

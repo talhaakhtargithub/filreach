@@ -7,8 +7,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/hero', pathMatch: 'full' }, // Redirect to hero section on load
-  { path: 'hero', component: HeroSectionComponent },
+  { path: '', component: HeroSectionComponent }, // Show HeroSectionComponent on root path
+  { path: 'hero', component: HeroSectionComponent }, // Optional: Keep this route if you want to access it directly
   { path: 'solutions', component: SolutionsComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'about', component: AboutUsComponent },

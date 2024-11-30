@@ -24,8 +24,8 @@ export class HeroSectionComponent {
   }
 
   animatePlaceholder() {
-    const writingSpeed = 50; // Time in milliseconds for each character
-    const deletingSpeed = 50; // Time in milliseconds for deleting each character
+    const writingSpeed = 100; // Time in milliseconds for each character
+    const pauseDuration = 1000; // Pause for 1 second after writing completes
 
     this.subscription = interval(writingSpeed).subscribe(() => {
       if (this.writing) {
@@ -33,18 +33,21 @@ export class HeroSectionComponent {
           this.placeholderText += this.originalPlaceholder[this.currentIndex];
           this.currentIndex++;
         } else {
-          this.writing = false; // Start deleting after finishing writing
-          this.currentIndex--; // Adjust index for deleting
-        }
-      } else {
-        if (this.currentIndex >= 0) {
-          this.placeholderText = this.placeholderText.slice(0, this.currentIndex);
-          this.currentIndex--;
-        } else {
-          this.writing = true; // Start writing again
-          this.currentIndex = 0; // Reset index for writing
+          this.writing = false; // Writing completed
+          setTimeout(() => {
+            this.currentIndex = 0; // Reset for writing
+            this.placeholderText = ''; // Clear placeholder
+            this.writing = true;
+          }, pauseDuration); // Pause before resetting
         }
       }
     });
   }
+
+
+
+  scrollToSection() {
+    document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
 }

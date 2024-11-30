@@ -3,14 +3,19 @@
   border-radius: 30px; /* Rounded corners for cards */
 }
 
+.card-text{
+  padding-left: 15px;
+  font-size: 23px;
+  font-weight: bold;
+}
 footer {
-  background-color: #e8ff76; /* Updated footer background color */
-  padding: 20px 0;
+  background-color: #e8ff76; /* Footer background color */
+  padding: 20px 20px;
   color: #000; /* Text color for footer */
 }
 
 .btn-primary {
-  background-color: #254eed; /* Button primary color */
+  background-color: #254eed; /* Primary button color */
   border-color: #254eed; /* Button border color */
 }
 
@@ -19,7 +24,7 @@ h6 {
 }
 
 ul {
-  padding-left: 0; /* Remove padding from list */
+  padding-left: 0; /* Remove padding from lists */
   list-style: none; /* No bullet points */
 }
 
@@ -29,7 +34,7 @@ ul li a {
 }
 
 ul li a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; /* Underline links on hover */
 }
 
 footer form input {
@@ -37,29 +42,29 @@ footer form input {
 }
 
 footer form .btn-primary {
-  background-color: #263959; /* Button primary color in footer */
+  background-color: #263959; /* Primary button color in footer */
   border-color: #263959; /* Button border color in footer */
   border-radius: 50px; /* Rounded corners for footer buttons */
 }
 
 footer small {
-  color: #6c757d; /* Color for small text in footer */
+  color: #6c757d; /* Small text color in footer */
 }
 
 /* CSS for fade-in animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px); /* Slide in from below */
+    opacity: 0;
+    transform: translateY(20px); /* Slide in from below */
   }
   to {
-      opacity: 1;
-      transform: translateY(0); /* End at original position */
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
   }
 }
 
 .animated-fadeIn {
-  animation: fadeIn 2s ease-in-out forwards; /* Fade in animation */
+  animation: fadeIn 2s ease-in-out forwards; /* Fade-in animation */
   opacity: 0; /* Start with hidden elements */
 }
 
@@ -80,24 +85,25 @@ footer small {
 }
 
 .start-project-btn:hover {
-  background-color: #000000 !important; /* Darker color on hover */
+  background-color: #000000 !important; /* Darker background on hover */
   color: #D7FF7B !important; /* Text color on hover */
 }
 
 .footer {
   border-top-left-radius: 20px !important; /* Rounded top left corner */
   border-top-right-radius: 20px !important; /* Rounded top right corner */
+  margin-bottom: 0 !important;
 }
 
 .svg-icon {
-  height: 40px; /* Match the height of the button */
+  height: 40px; /* Match height to button */
   margin-left: 0; /* No margin between button and icon */
-  vertical-align: middle; /* Align the icon vertically with text */
+  vertical-align: middle; /* Align icon vertically with text */
   transform: rotate(215deg); /* Tilt the SVG image */
-  transition: transform 0.3s; /* Smooth transition for hover effect (optional) */
+  transition: transform 0.3s; /* Smooth hover effect */
 }
 
-/* Additional styles for hover effects */
+/* Additional hover effects */
 .start-project-btn:hover .svg-icon {
   transform: rotate(0); /* Reset rotation on button hover */
 }
@@ -107,42 +113,118 @@ footer small {
 }
 
 .card:hover img {
-  transform: scale(1.05); /* Slightly scale up image on hover */
+  transform: scale(1.05); /* Slight image scale up on hover */
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 1200px) {
   h5 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 992px) {
   .card {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
   h5 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .start-project-btn {
-      width: 100%; /* Full width for small devices */
+    width: 100%; /* Full-width button on small devices */
   }
 }
 
 @media (max-width: 576px) {
   h1 {
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+  .card-text{
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .svg-icon {
-      height: 30px; /* Smaller SVG icon */
+    height: 30px; /* Smaller SVG icon */
   }
+}
+
+@media (max-width: 800px) and (min-width: 350px) {
+  .founder-name {
+    font-size: 0.7rem; /* Adjust font size */
+  }
+
+  .founder-role {
+    font-size: 0.5rem; /* Adjust font size */
+  }
+
+  .arrow-icon {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 768px) {
+  footer.footer {
+    padding: 1rem;
+  }
+
+  footer.footer .row {
+    flex-direction: column;
+  }
+
+  /* Adjust columns to stack on top of each other */
+  footer.footer .col-12,
+  footer.footer .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Left-align Home and About Us */
+  footer.footer .col-md-2 h6,
+  footer.footer .col-md-2 ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  /* Center-align logo and newsletter sections */
+  footer.footer .col-12.text-center {
+    text-align: center;
+  }
+
+  /* Reduce the logo size */
+  footer.footer img.img-fluid {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  /* Make text smaller and reduce padding */
+  footer.footer h6 {
+    font-size: 1rem;
+  }
+
+  footer.footer form .form-control {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer.footer form button {
+    width: 100%;
+  }
+
+  footer.footer .row.mt-4 {
+    margin-top: 2rem;
+  }
+}
+
+.img-fluid{
+  width: 60%;
+  height: 60%;
 }

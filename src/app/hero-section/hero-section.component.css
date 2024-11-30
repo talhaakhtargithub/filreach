@@ -3,12 +3,13 @@
   height: 70vh; /* Default height for larger screens */
   background-color: #ffffff;
   overflow: hidden;
-  margin-top: 100px !important;
+  margin-top: 50px !important;
 }
 
 /* Custom placeholder style */
 input::placeholder {
   font-size: 30px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
   opacity: 1; /* Ensures the color is visible */
 }
@@ -25,13 +26,13 @@ input::placeholder {
 
 .icon1 {
   left: 0%;
-  top: 30px;
+  top: 10px;
   animation-delay: 0s;
 }
 
 .icon2 {
   left: 10%;
-  top: 120px;
+  top: 100px;
   animation-delay: 0.5s;
 }
 
@@ -120,7 +121,12 @@ input::placeholder {
     height: auto; /* Allow the height to adjust to the content on mobile */
     padding: 20px 10px; /* Add padding for mobile */
   }
-
+  input::placeholder {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    opacity: 1; /* Ensures the color is visible */
+  }
   .icon1,
   .icon2,
   .icon3 {
@@ -162,6 +168,12 @@ input::placeholder {
     height: 45px;
   }
 }
+input::placeholder {
+  font-size: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+  opacity: 1; /* Ensures the color is visible */
+}
 
 .search-bar {
   border-radius: 20%; /* 20% rounded corners */
@@ -202,7 +214,12 @@ input::placeholder {
     padding: 0.5rem;
     height: auto; /* Adjust input height on smaller screens */
   }
-
+  input::placeholder {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    opacity: 1; /* Ensures the color is visible */
+  }
   .search-bar img {
     width: 30px;
     height: 30px; /* Shrinks the icons on smaller screens */
@@ -210,10 +227,33 @@ input::placeholder {
 }
 
 @media (max-width: 576px) {
+  .icon1 {
+    left: 0%;
+    top: 0px;
+    animation-delay: 0s;
+  }
+
+  .icon2 {
+    left: 10%;
+    top: 70px;
+    animation-delay: 0.5s;
+  }
+
+  .icon3 {
+    left: 0%;
+    top: 300px;
+    animation-delay: 1s;
+  }
+
   .search-bar {
     padding: 0.5rem; /* Adds padding around the search bar */
   }
-
+  input::placeholder {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    opacity: 1; /* Ensures the color is visible */
+  }
   .search-bar input {
     font-size: 1rem; /* Decreases font size on smaller screens */
   }
